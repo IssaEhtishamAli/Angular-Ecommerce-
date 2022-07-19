@@ -1,0 +1,8 @@
+<h1>A & z-shop</h1>
+<a href="/products" class="list-group-item" style="background-color: khaki;" >View All Products</a>
+
+<a href="/products/create-product" class="list-group-item" style="background-color:#ddd">Add New Product</a>
+
+<div class="list-group" *ngFor="let ctg of categoryList">
+    <a href="/products/category/{{ctg.id}}" class="list-group-item" >{{ctg.categoryName}}</a>
+</div>
